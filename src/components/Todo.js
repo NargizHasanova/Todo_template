@@ -12,7 +12,6 @@ function Todo() {
                 <div className="add__form">
                     <input
                         type="text"
-                        value=''
                         placeholder="Add your new todo.."
                     />
 
