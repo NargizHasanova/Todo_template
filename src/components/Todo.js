@@ -1,9 +1,14 @@
 import { useEffect, useState } from "react";
 import del from "./img/delete.png";
 import ad from "./img/ad.png";
+import pencil from "./img/pencil.png";
+import cancel from "./img/cancel.png";
+import update from "./img/update.png";
 import axios from "axios";
+import { Axios } from './api';
 
 function Todo() {
+    
 
     return (
         <div className="container">
@@ -14,16 +19,9 @@ function Todo() {
                         type="text"
                         placeholder="Add your new todo.."
                     />
-
                     <button className="add">
                         <img src={ad} alt="" />
                     </button>
-
-
-                    <div className="edit">
-                        <button>Update</button>
-                        <button>Cancel</button>
-                    </div>
                 </div>
                 <div>
                     <div className="li__item">
@@ -34,7 +32,10 @@ function Todo() {
                             <p>task</p>
                         </div>
                         <button>
-                            <img src={del} alt="" />
+                            <img src={cancel} alt="" />
+                        </button>
+                        <button>
+                            <img src={update} alt="" />
                         </button>
                     </div>
                 </div>
